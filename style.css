@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+hmtl {
+  font-size: 62.5%;
+}
+
+:root {
+  --dark: #343131;
+  --red: #A04747;
+  --orange: #D8A25E;
+  --yellow: #EEDF7A;
+}
+
+body {
+  background-color: var(--dark);
+  font-family: "Permanent Marker", cursive;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.container {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top,
+.middle {
+  margin-bottom: 6.4rem;
+}
+
+.adaptive-text {
+  font-size: 3.2rem;
+}
+
+.adaptive-text,
+.player-1-title,
+.player-2-title {
+  color: var(--orange);
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+}
+
+.left,
+.right {
+  text-align: center;
+}
+
+.player-1-title,
+.player-2-title {
+  margin-bottom: 1.6rem;
+}
+
+.dice-container-left,
+.dice-container-right {
+  background-color: var(--red);
+  border-radius: 12px;
+}
+
+.dice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.grid-dot-left,
+.grid-dot-right {
+  height: 1.2rem;
+  width: 1.2rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 1.2rem;
+}
+
+.roll-button {
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 12px;
+  padding: 1.6rem 3.2rem;
+  margin-top: 3.2rem;
+  background-color: var(--red);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.roll-button:hover,
+.roll-button:active {
+  background-color: var(--orange);
+  box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.2);
+}
+
+.footer-text {
+  color: var(--yellow);
+}
